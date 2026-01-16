@@ -17,10 +17,10 @@ public class Car {
     /**
      * Crea un nuevo coche.
      * 
-     * @param make   marca
-     * @param model  modelo
-     * @param year   año
-     * @param price  precio
+     * @param make   El nombre completo de la marca 
+     * @param model  El nombre completo del modelo
+     * @param year   El año preciso en el que salio
+     * @param price  El precio aproximado que tiene
      */
     public Car(String make, String model, int year, double price) {
         this.make = make;
@@ -38,7 +38,7 @@ public class Car {
 
     /**
      * 
-     *  @param make nueva marca
+     *  @param make nueva marca que tiene el coche
      * 
      */
     public void setMake(String make) {
@@ -52,7 +52,7 @@ public class Car {
         return model;
     }
 
-    /** @param model nuevo modelo */
+    /** @param model nuevo modelo que tiene el coche */
     public void setModel(String model) {
         this.model = model;
     }
@@ -64,7 +64,7 @@ public class Car {
         return year;
     }
 
-    /** @param year nuevo año */
+    /** @param year nuevo año que tiene el coche */
     public void setYear(int year) {
         this.year = year;
     }
@@ -78,7 +78,7 @@ public class Car {
         return price;
     }
 
-    /** @param price nuevo precio */
+    /** @param price nuevo precio que tiene el coche */
     public void setPrice(double price) {
         this.price = price;
     }
@@ -95,6 +95,7 @@ public class Car {
 
     /** @return descripción del coche
      * Breve descripcion del coche
+     * Override es para cambiar el funcionamiento
      */
     @Override
     public String toString() {
